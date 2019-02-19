@@ -13,10 +13,10 @@ embed {
 		margin-left:-100px;
 		display: block;
 }
-div{
-	
-	right:0;
-	top:0;
+
+#player{
+	right:0px;
+	top:0px;
 }
 
 </style>
@@ -26,10 +26,12 @@ div{
 <embed width="1500" height="1500" 
 src="https://www.youtube.com/embed/7ol9qzDsCCQ?autoplay=1&mute=1">
 
-<div><audio controls autoplay >
-  <source src="California Dreamin'.ogg" type="audio/ogg">
-  <source src="California Dreamin'.mp3" type="audio/mpeg">
-</audio></div>
+<iframe src="California Dreamin'.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+<audio id="player" autoplay autoplay loop>
+  <source src="California Dreamin'.mp3" type="California Dreamin'.mp3">
+</audio>
+
 
 </body>
 </html>
