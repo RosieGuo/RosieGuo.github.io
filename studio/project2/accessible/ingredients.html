@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+@import url('https://fonts.googleapis.com/css?family=Dokdo');
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai');
+
+body {
+  margin: 0;
+  background-color: rgb(255, 86, 27);
+}
+
+ul.da {
+font-family: 'Dokdo', cursive;
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  width: 15%;
+  background-color: rgb(255, 86, 27);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+ul.xi {
+font-family: 'Dokdo', cursive;
+  list-style-type: none;
+  margin:0;
+  margin-top:170px;
+  padding:0;
+  width: 15%;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color:white;
+  margin-top:80px;
+  padding: 30px 30px;
+  font-size:16pt;
+  font-weight: 10;
+  text-decoration: none;
+}
+li a.active {
+  color:rgb(121, 139, 0);
+}
+
+li a:hover:not(.active) {
+  color:rgb(121, 139, 0);
+}
+
+#ingredients{
+font-family: 'Dokdo', cursive;
+  text-align: center;
+  font-size: 70px;
+  color:rgb(121, 139, 0); 
+  margin-top: -10px;
+}
+#a{
+font-family: 'Hind Madurai', sans-serif;
+  color:white;  
+  text-align: right;
+  font-size: 20px;
+  margin-top: -20px;
+  margin-right: 650px;
+  font-weight: 10px;
+  line-height: 70px;
+  padding-right: 30px
+}
+#b{
+font-family: 'Hind Madurai', sans-serif;
+  text-align: left;
+  font-size: 20px;
+  color:rgb(0, 36, 19);
+  margin-top: -502px;
+  margin-left: 650px;
+  font-weight: 10px;
+  line-height: 70px;
+  padding-left: 30px
+}
+#instructions{
+font-family: 'Dokdo', cursive;
+ text-align: center;
+ font-size: 40px;
+ color:rgb(186, 139, 0);
+ margin-top: -80px;
+ margin-left:1050px;
+transition: 0.3s;
+}
+#instructions a:visited {
+ color:rgb(186, 139, 0);
+}
+</style>
+</head>
+<body>
+
+<ul class="da">
+  <li><a href="recipe.html">HOME</a></li>
+  <li><a class="active" href="ingredients.html">INGREDIENTS</a></li>
+</ul>
+
+<ul class="xi">
+  <li><a href="instructions.html">INSTRUCTIONS</a></li>
+</ul>
+
+<div>
+  <h1 id="ingredients" class="ingredients">Ingredients</h1>
+</div>
+
+<div>
+  <h1 id="a" class="a">500g<br>One<br>One<br>Moderate amount
+<br>1 teaspoon<br>5 drops<br>Moderate amount</h1>
+</div>
+
+<div>
+  <h1 id="b" class="b">Pork ribs<br>Sweet corn<br>Carrot<br>Ginger
+<br>Cooking wine<br>White vinegar<br>Salt</h1>
+</div>
+
+</body>
+</html>
