@@ -8,58 +8,81 @@
 @import url('https://fonts.googleapis.com/css?family=Hind+Madurai');
 
 body{
- background-color: rgb(255, 86, 27);
+	background-color: white;
 }
-#title{
+#t1{
 font-family: 'Dokdo', cursive;
- text-align: center;
+ text-align: left;
  font-size: 130px;
- color:white;
+ color:rgb(255, 86, 27);
+ position: absolute;
+ z-index: 2;
+ margin-top: -550px;
+ text-shadow: 5px 5px white;
+
 }
-#reason{
+#t2{
+font-family: 'Dokdo', cursive;
+ text-align: right;
+ font-size: 130px;
+ color:rgb(255, 86, 27);
+ position: absolute;
+ z-index: 2;
+ margin-top: -200px;
+ margin-left:740px;
+ text-shadow: 5px 5px white;
+}
+#describe{
 font-family: 'Hind Madurai', sans-serif;
  text-align: center;
  font-size: 18px;
  color:rgb(255, 165, 0);
  font-weight: 5;
  padding:300px;
- margin-top: -30%;
+ margin-top: -24%;
+}
+#reason{
+font-family: 'Hind Madurai', sans-serif;
+ text-align: center;
+ font-size: 25px;
+ color:rgb(255, 165, 0);
+ font-weight: 5;
+ padding:300px;
+ margin-top: -37%;
 }
 #ingredients{
 font-family: 'Dokdo', cursive;
  text-align: center;
- font-size: 70px;
- color:rgb(121, 139, 0);
- margin-top: -250px;
- margin-left: 200px;
+ font-size: 65px;
+ color:white;
+background-color:rgb(121, 139, 0);
+padding:10px;
+ margin-top: -270px;
+ margin-left: 460px;
  width:300px;
  height:100px;
  transition: 0.3s;
 }
 #ingredients a:visited {
- color:rgb(121, 139, 0);
+ color:white;
 }
-#instructions{
-font-family: 'Dokdo', cursive;
- text-align: center;
- font-size: 70px;
- color:rgb(121, 139, 0);
- margin-top: -170px;
- margin-left:750px;
- padding:20px;
- width:300px;
- height:100px;
- transition: 0.3s;
-}
-#instructions a:visited {
- color:rgb(121, 139, 0);
+#img{
+	width: 60%;
+	margin-left: 240px;
 }
 </style>
 
 <body>
 
 <div>
- <h1 id="title" class="title">Carrot Corn Ribs Soup</h1>
+	<img src="timg.jpeg" id="img"> 
+
+ <h1 id="t1" class="title">Carrot Corn</h1>
+ <h1 id="t2" clas="rfs">Ribs Soup</h1>
+</div>
+
+<div>
+ <h1 id="describe" class="describe">The image shows what Carrot corn ribs soup looks like.</h1>
 </div>
 
 <div>
@@ -68,10 +91,6 @@ font-family: 'Dokdo', cursive;
 
 <div>
  <h1 id="ingredients" class="ingredients"><a href="ingredients.html" style=" text-decoration:none">Ingredients</h1>
-</div>
-
-<div>
- <h1 id="instructions" class="instructions"><a href="instructions.html" style="text-decoration:none">Instructions</h1>
 </div>
 
 </body>

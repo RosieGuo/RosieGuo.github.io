@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  background-color: white;
+  background-color: rgb(255, 86, 27);
 }
 
 ul.da {
@@ -17,6 +17,7 @@ font-family: 'Dokdo', cursive;
   margin:0;
   padding: 0;
   width: 15%;
+  background-color: rgb(255, 86, 27);
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -27,8 +28,9 @@ font-family: 'Dokdo', cursive;
   list-style-type: none;
   margin:0;
   margin-top:170px;
-  padding:0;
+  padding: 0;
   width: 15%;
+  background-color: rgb(255, 86, 27);
   position: fixed;
   right: 0;
   height: 100%;
@@ -37,7 +39,7 @@ font-family: 'Dokdo', cursive;
 
 li a {
   display: block;
-  color:rgb(255, 86, 27);
+  color:rgb(255, 101, 20);
   margin-top:80px;
   padding: 30px 30px;
   font-size:16pt;
@@ -45,26 +47,26 @@ li a {
   text-decoration: none;
 }
 li a.active {
-  color:rgb(255, 86, 27);
+  color:rgb(255, 101, 20);
 }
 
 li a:hover:not(.active) {
-  color:rgb(121, 139, 0); 
+  color: rgb(255, 101, 20);
 }
 
 #ingredients{
 font-family: 'Dokdo', cursive;
   text-align: center;
-  font-size: 100px;
-  color:rgb(121, 139, 0); 
+  font-size: 70px;
+  color:rgb(255, 101, 20);
   margin-top: -10px;
 }
 #a{
 font-family: 'Hind Madurai', sans-serif;
- color:rgb(255, 165, 0);
+  color:rgb(255, 119, 15);  
   text-align: right;
   font-size: 20px;
-  margin-top: -60px;
+  margin-top: -20px;
   margin-right: 650px;
   font-weight: 10px;
   line-height: 70px;
@@ -74,8 +76,8 @@ font-family: 'Hind Madurai', sans-serif;
 font-family: 'Hind Madurai', sans-serif;
   text-align: left;
   font-size: 20px;
-  color:black;
-  margin-top: -503px;
+  color:rgb(255, 119, 15);  
+  margin-top: -502px;
   margin-left: 650px;
   font-weight: 10px;
   line-height: 70px;
@@ -85,33 +87,13 @@ font-family: 'Hind Madurai', sans-serif;
 font-family: 'Dokdo', cursive;
  text-align: center;
  font-size: 40px;
- color:white;
- margin-top: -90px;
- margin-left:1000px;
- background-color:rgb(121, 139, 0);
-padding:3px;
+ color:rgb(186, 139, 0);
+ margin-top: -80px;
+ margin-left:1050px;
 transition: 0.3s;
 }
 #instructions a:visited {
- color:white;
-}
-
-#ingredients:hover {
-  animation: shake 1s;
-  animation-iteration-count: infinite;
-}
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+ color:rgb(255, 101, 20);
 }
 </style>
 </head>
@@ -119,6 +101,11 @@ transition: 0.3s;
 
 <ul class="da">
   <li><a href="recipe.html">HOME</a></li>
+  <li><a class="active" href="ingredients.html">INGREDIENTS</a></li>
+</ul>
+
+<ul class="xi">
+  <li><a href="instructions.html">INSTRUCTIONS</a></li>
 </ul>
 
 <div>
@@ -133,11 +120,6 @@ transition: 0.3s;
 <div>
   <h1 id="b" class="b">Pork ribs<br>Sweet corn<br>Carrot<br>Ginger
 <br>Cooking wine<br>White vinegar<br>Salt</h1>
-</div>
-
-
-<div>
- <h1 id="instructions" class="instructions"><a href="instructions.html" style=" text-decoration:none">INSTRUCTIONS</h1>
 </div>
 
 </body>

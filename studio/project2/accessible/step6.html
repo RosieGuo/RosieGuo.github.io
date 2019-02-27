@@ -8,49 +8,27 @@
 
 body {
   margin: 0;
-  background-color: rgb(255, 86, 27);
+  background-color: white;
 }
 
 ul.da {
 font-family: 'Dokdo', cursive;
   list-style-type: none;
   margin:0;
+  margin-top: 60px;
   padding: 0;
   width: 15%;
-  background-color: rgb(255, 86, 27);
   position: fixed;
   height: 100%;
   overflow: auto;
-}
-li a.erc {
-  background-color:rgb(196, 194, 180);
-  color:white;
-  font-size:30px;
-}
-li a:hover:not(.erc) {
-  color:rgb(121, 139, 0); ;
 }
 ul.xi {
 font-family: 'Dokdo', cursive;
   list-style-type: none;
   margin:0;
-  margin-top:170px;
-  padding: 0;
-  width: 15%;
-  background-color: rgb(255, 86, 27);
-  position: fixed;
-  right: 0;
-  height: 100%;
-  overflow: auto;
-}
-ul.step2 {
-  font-family: 'Patrick Hand', cursive;
-  list-style-type: none;
-  margin:0;
-  margin-top:170px;
-  padding: 0;
-  width: 15%;
-  background-color: rgb(255, 86, 27);
+  margin-top:360px;
+  padding: 2%;
+  width: 13%;
   position: fixed;
   right: 0;
   height: 100%;
@@ -58,7 +36,7 @@ ul.step2 {
 }
 li a {
   display: block;
-  color:white;
+  color:rgb(255, 86, 27);
   margin-top:80px;
   padding: 30px 30px;
   font-size:16pt;
@@ -66,43 +44,66 @@ li a {
   text-decoration: none;
 }
 li a.active {
-  color:rgb(121, 139, 0); 
+  background-color:rgb(121, 139, 0);
+  font-size: 55px;
+  margin-left: -5px;
+  padding:10px;
+  color:white;
 }
 li a:hover:not(.active) {
-  background-color: rgb(255, 86, 27);
-  color:rgb(121, 139, 0); 
+  color:rgb(255, 86, 27);
 }
-li a.bvc {
-  background-color:rgb(196, 194, 180);
-  color:white;
+
+li a.s1 {
+  color:rgb(56, 172, 88);
   font-size:30px;
 }
-li a:hover:not(.bvc) {
-  color:rgb(121, 139, 0); ;
+li a:hover:not(.s1) {
+ color:rgb(255, 165, 0);
 }
-#bgt{
+
+#instructions{
 font-family: 'Dokdo', cursive;
-  	text-align: center;
-  	font-size: 70px;
-    color:rgb(121, 139, 0); 
-  	margin-top: -10px;
+    text-align: center;
+    font-size: 100px;
+    color:rgb(121, 139, 0);
+    margin-top: -10px;
+    margin-left: -700px;
 }
 #step6{
-	font-family: 'Patrick Hand', cursive;
-	text-align: center;
-	font-size: 50px;
-	color:white;
-	margin-top: 100px;
+  font-family: 'Patrick Hand', cursive;
+  text-align: center;
+  font-size: 60px;
+  color:rgb(121, 139, 0);
+  margin-top: -50px;
 }
 #yi{
 font-family: 'Hind Madurai', sans-serif;
-	text-align: left;
-	font-size: 70px;
-  color:rgb(178, 194, 168); 
-	font-weight: 5;
-	padding:230px;
-	margin-top: -220px;
-  margin-left: 170px
+  text-align: left;
+  font-size: 70px;
+  color:black;  
+  line-height: 120px;
+  font-weight: 5;
+  padding:190px;
+  margin-top: -150px;
+  margin-left: 100px
+}
+#step6:hover {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 </style>
 </head>
@@ -111,21 +112,20 @@ font-family: 'Hind Madurai', sans-serif;
 <ul class="da">
   <li><a href="recipe.html">HOME</a></li>
   <li><a href="ingredients.html">INGREDIENTS</a></li>
-  <li><a class="erc" href="step5.html">STEP5</a></li>
+  <li><a href="step5.html">STEP5</a></li>
 </ul>
 
 <ul class="xi">
-  <li><a class="active" href="instructions.html">INSTRUCTIONS</a></li>
-  <li><a class="bvc" href="step7.html">STEP7</a></li>
+  <li><a class="active" href="step7.html">STEP7</a></li>
 </ul>
 
 
 <div>
-	<h1 id="bgt" class="instructions">Instructions</h1>
+  <h1 id="instructions" class="instructions">Instructions</h1>
 </div>
 
 <div>
-	<h1 id="step6" class="step6">Step6</h1>
+  <h1 id="step6" class="step6">Step6</h1>
 </div>
 
 <div>
