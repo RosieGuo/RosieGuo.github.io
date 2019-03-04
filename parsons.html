@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Convergence');
+@import url('https://fonts.googleapis.com/css?family=Marcellus+SC');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+body{
+	margin: 0;
+	background-color:rgb(240, 238, 233);
+}
+
+ul.xi {
+font-family: 'Convergence', sans-serif;
+  list-style-type: none;
+  text-align: right;
+  margin:0;
+  margin-top: -200px;
+  padding: 2%;
+  width: 13%;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  overflow: auto;
+}
+li a {
+  display: block;
+  color:black;
+  margin-top: 60px;
+  padding: 30px 30px;
+  font-size:12pt;
+  font-weight: 10;
+  text-decoration: none;
+}
+li a.active {
+  background-color:rgb(121, 139, 0);
+  font-size: 55px;
+  margin-left: -5px;
+  padding:10px;
+  color:white;
+}
+li a:hover:not(.active) {
+  color:rgb(255, 86, 27);
+}
+#description{
+font-family: 'Libre Baskerville', serif;
+  color:black;
+  font-size: 23pt;
+  line-height: 60px;
+  margin-left: 100px;
+  margin-top: 150px;
+  width:60%;
+}
+#img{
+  width: 60%;
+  margin-left: 320px;
+  margin-top: -900px;
+  position: absolute;
+  z-index: 2;
+  opacity: 2;
+}
+#img:hover {
+       opacity: 0.5;
+       transform:scale(1.3);
+}
+#film{
+  width: 55%;
+  margin-left: 350px;
+  margin-top: -280px;
+  position: absolute;
+  z-index: 2;
+   opacity: 2;
+}  
+#film:hover {
+       opacity: 0.5;
+       transform:scale(1.3);
+}
+#recipe{
+  width:207vh;
+  height:80vw;
+  margin-top: 200px;
+}
+#r{
+font-family: 'Libre Baskerville', serif;
+color: rgb(12, 39, 7);
+  font-weight: 2;
+  margin-left: 60px;
+  margin-top: -680px;
+  font-size: 15pt;
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+  line-height: 40px;
+}
+#f{
+font-family: 'Libre Baskerville', serif;
+color: rgb(12, 39, 7);
+  font-weight: 2;
+  margin-left: 60px;
+  margin-top: -180px;
+  font-size: 15pt;
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+  line-height: 40px;
+}
+#white{
+  width: 100%;
+  height:105vh;
+  margin-top:-1000px;
+  background-color: white;
+}
+#studio1{
+  margin-top: 100px;
+  position: absolute;
+  z-index: 2;
+   opacity: 2;
+  display: block;
+  margin-left: 100px;
+  width: 45%;
+}  
+#studio1:hover {
+       opacity: 0.5;
+       transform:scale(1.3);
+}
+#black{
+  width: 100%;
+  height:105vh;
+  background-color: black;
+}
+#reza{
+font-family: 'Libre Baskerville', serif;
+color: white;
+  font-weight: 2;
+  margin-left:800px;
+  margin-top: 300px;
+  font-size: 15pt;
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+  line-height: 40px;
+}
+#studio2{
+  margin-top: 850px;
+  position: absolute;
+  z-index: 2;
+   opacity: 2;
+  display: block;
+  margin-left: 100px;
+  width: 45%;
+}  
+#studio2:hover {
+       opacity: 0.5;
+       transform:scale(1.3);
+}
+#red{
+  width: 100%;
+  height:105vh;
+  margin-top:700px;
+  background-color: rgb(96, 12, 0);
+}
+#love{
+font-family: 'Libre Baskerville', serif;
+color: white;
+  font-weight: 2;
+  margin-left:750px;
+  margin-top: 1000px;
+  font-size: 15pt;
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+  line-height: 50px;
+}
+#studio3{
+  margin-top:80px;
+  position: absolute;
+  z-index: 2;
+   opacity: 2;
+  display: block;
+  margin-left: 600px;
+  width: 30%;
+}  
+#studio3:hover {
+       opacity: 0.5;
+       transform:scale(1.3);
+}
+#bai{
+  width: 100%;
+  height:105vh;
+  margin-top:0px;
+  background-color:white;
+}
+#jazz{
+font-family: 'Libre Baskerville', serif;
+color: black;
+  font-weight: 2;
+  margin-left:100px;
+  margin-top: 400px;
+  font-size: 15pt;
+  position: absolute;
+  z-index: 10;
+  width: 400px;
+  line-height: 50px;
+}
+#studio4{
+  margin-top:150px;
+  position: absolute;
+  z-index: 2;
+   opacity: 2;
+  display: block;
+  margin-left: 600px;
+  width: 30%;
+}  
+#studio4:hover {
+       opacity: 0.5;
+       transform:scale(1.3);
+}
+#b{
+  width: 100%;
+  height:105vh;
+  margin-top:0px;
+  background-color:rgb(240, 239, 239);
+}
+#life{
+font-family: 'Libre Baskerville', serif;
+color: black;
+  font-weight: 2;
+  margin-left:100px;
+  margin-top: 400px;
+  font-size: 15pt;
+  position: absolute;
+  z-index: 10;
+  line-height: 50px;
+}
+</style>
+
+<body>
+
+<ul class="xi">
+  <li><a href="work.html">HOME</a></li>
+  <li><a href="photography.html">PHOTOGRAPHY</a></li>
+</ul>
+
+<div>
+  <h1 id="description" class="description">In the sophomore year at Parsons School of Design, I learned basic design knowledge about posters, books and websites.</h1>
+</div>
+
+
+<div id="recipe"></div>
+
+<div>
+  <h1 id="r" class="r">This is a recipe design that is accessible for all people.  ►</h1>
+</div>
+
+<div>
+  <a href="studio/project2/accessible/recipe.html"><img src="recipe.png" id="img"></a>
+</div>
+
+<div>
+  <h1 id="f" class="f">This is a typo graphic dialogues design of The Great Gatsby, making audiences experience the film from graphic design of the selected dialogues.    ►</h1>
+</div>
+
+<div>
+  <a href="studio/project1/f.html"><img src="film.png" id="film"></a>
+</div>
+
+<div id="white"></div>
+
+<div>
+  <a href="studio2.html"><img src="studio2.png" id="studio2"></a>
+</div>
+
+<div>
+  <h1 id="love" class="love">A book design for the film <br>In the Mood for Love ◄</h1>
+</div>
+
+<div id="red"></div>
+
+<div>
+  <a href="studio1.html"><img src="studio1.jpeg" id="studio1"></a>
+</div>
+
+<div>
+  <h1 id="reza" class="reza">This is a book design for an Iranian graphic designer Reza Abedini. ◄</h1>
+</div>
+
+<div id="black"></div>
+
+<div>
+  <a href="studio3.html"><img src="jazz1.png" id="studio3"></a>
+</div>
+
+<div>
+  <h1 id="jazz" class="jazz">2018 Java Jazz Festival posters ►</h1>
+</div>
+
+<div id="bai"></div>
+
+<div>
+  <a href="studio4.html"><img src="life4.png" id="studio4"></a>
+</div>
+
+<div>
+  <h1 id="life" class="life">Collages of Self-introduction ►</h1>
+</div>
+
+<div id="b"></div>
+
+
+</body>
+</html>
