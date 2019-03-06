@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
 @import url('https://fonts.googleapis.com/css?family=Hind+Madurai');
@@ -26,7 +28,7 @@ ul.xi {
 font-family: 'Dokdo', cursive;
   list-style-type: none;
   margin:0;
-  margin-top:7%;
+  margin-top:19%;
   padding: 0%;
   width: 16%;
   position: fixed;
@@ -63,6 +65,7 @@ li a.s1 {
 li a:hover:not(.s1) {
  color:rgb(255, 165, 0);
 }
+
 #instructions{
 font-family: 'Dokdo', cursive;
     text-align: center;
@@ -71,7 +74,7 @@ font-family: 'Dokdo', cursive;
     margin-top: -2%;
     margin-left: 3%;
 }
-#step2{
+#step4{
 font-family: 'Dokdo', cursive;
   text-align: center;
   font-size: 50pt;
@@ -81,15 +84,16 @@ font-family: 'Dokdo', cursive;
 #yi{
 font-family: 'Hind Madurai', sans-serif;
   text-align: left;
-  font-size: 50pt;
+  font-size: 55pt;
   color:black;  
   line-height: 140%;
   font-weight: 5;
-  padding:17%;
-  margin-top: -15%;
-  margin-left: 14%;
+  padding:18%;
+  margin-top: -18%;
+  margin-left: 10%;
 }
-#step2:hover {
+
+#step4:hover {
   animation: shake 1s;
   animation-iteration-count: infinite;
 }
@@ -107,18 +111,44 @@ font-family: 'Hind Madurai', sans-serif;
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+@media only screen and (max-width:600px) {
+  #instructions{
+    font-size: 5vmax;
+  }
+  li a{
+    font-size:0.8vmax;
+  }
+  ul.da{
+    width:33%;
+  }
+  ul.xi{
+    width:21%;
+    margin-top: 31%;
+  }
+  li a.active{
+    font-size: 0.8vmax;
+  }
+  #step4{
+  font-size: 3vmax;
+}
+  #yi{
+    font-size: 2vmax;
+    padding: 19%;
+    margin-left: 13%;
+    margin-top: -15%;
+  }
+}
 </style>
 </head>
 <body>
+
 <ul class="da">
   <li><a href="recipe.html">⦿ HOME</a></li>
   <li><a href="ingredients.html">☑ INGREDIENTS</a></li>
-  <li><a href="instructions.html">⇽ STEP1</a></li>
+  <li><a href="step3.html">⇽ STEP3</a></li>
 </ul>
 
 <ul class="xi">
-  <li><a class="active" href="step3.html">⇾ STEP3</a></li>
-  <li><a class="active" href="step4.html">⇾ STEP4</a></li>
   <li><a class="active" href="step5.html">⇾ STEP5</a></li>
   <li><a class="active" href="step6.html">⇾ STEP6</a></li>
   <li><a class="active" href="step7.html">⇾ STEP7</a></li>
@@ -131,13 +161,12 @@ font-family: 'Hind Madurai', sans-serif;
 </div>
 
 <div>
-  <h1 id="step2" class="step2">STEP2</h1>
+  <h1 id="step4" class="step4">STEP4</h1>
 </div>
 
 <div>
-  <h1 id="yi" class="yi">After the ribs are washed,<br>add the ginger and garlic to the pot.</h1>
+  <h1 id="yi" class="yi">Put the pork ribs into the boiled water.<br>After cooking for three or four minutes,<br>take the ribs out and use water to rinse them clean.</h1>
 </div>
-
 
 </body>
 </html>

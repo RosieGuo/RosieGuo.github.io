@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
-@import url('https://fonts.googleapis.com/css?family=Hind+Madurai');
 @import url('https://fonts.googleapis.com/css?family=Dokdo');
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai');
 
 body {
   margin: 0;
@@ -15,21 +17,22 @@ ul.da {
 font-family: 'Dokdo', cursive;
   list-style-type: none;
   margin:0;
-  margin-top: 5%;
   padding: 0;
-  width: 20%;
-  position: fixed;
+  width: 15%;
+  position: relative;
+  margin-top: -5%;
   height: 100%;
   overflow: auto;
 }
+
 ul.xi {
 font-family: 'Dokdo', cursive;
   list-style-type: none;
   margin:0;
-  margin-top:7%;
-  padding: 0%;
-  width: 16%;
-  position: fixed;
+  margin-top:17%;
+  padding:0;
+  width: 15%;
+  position: relative;
   right: 0;
   height: 100%;
   overflow: auto;
@@ -37,59 +40,56 @@ font-family: 'Dokdo', cursive;
 li a {
   display: block;
   color:rgb(255, 86, 27);
-  margin-top:20%;
-  margin-left:-7%;
+  margin-top:60%;
   padding: 20% 20%;
-  font-size:16pt;
+  font-size:1.8vmax;
   font-weight: 10;
   text-decoration: none;
-  border-radius: 15% 20% 20%;
 }
 li a.active {
-  background-color:rgb(121, 139, 0);
-  font-size: 16pt;
-  margin-left: 40%;
-  padding:2%;
-  color:white;
-}
-li a:hover:not(.active) {
   color:rgb(255, 86, 27);
 }
 
-li a.s1 {
-  color:rgb(56, 172, 88);
-  font-size:20pt;
+li a:hover:not(.active) {
+  color:rgb(121, 139, 0); 
 }
-li a:hover:not(.s1) {
- color:rgb(255, 165, 0);
+
+#ingredients{
+font-family: 'Dokdo', cursive;
+  text-align: center;
+  font-size: 8vmax;
+  color:rgb(121, 139, 0); 
+  margin-top: -14%;
+}
+#b{
+font-family: 'Hind Madurai', sans-serif;
+  text-align: left;
+  font-size: 1.6vmax;
+  color:black;
+  margin-top: -5%;
+  margin-left: 40%;
+  font-weight: 10%;
+  line-height: 350%;
+  padding-left: 3%;
 }
 #instructions{
 font-family: 'Dokdo', cursive;
-    text-align: center;
-    font-size: 80pt;
-    color:rgb(121, 139, 0);
-    margin-top: -2%;
-    margin-left: 3%;
+ text-align: center;
+ font-size: 3vmax;
+ color:white;
+ margin-top: -5%;
+ margin-left:80%;
+ background-color:rgb(121, 139, 0);
+padding:0.2%;
+transition: 0.3s;
+ border-radius: 15% 20% 20%;
+
 }
-#step2{
-font-family: 'Dokdo', cursive;
-  text-align: center;
-  font-size: 50pt;
-  color:rgb(121, 139, 0);
-  margin-top: -2%;
+#instructions a:visited {
+ color:white;
 }
-#yi{
-font-family: 'Hind Madurai', sans-serif;
-  text-align: left;
-  font-size: 50pt;
-  color:black;  
-  line-height: 140%;
-  font-weight: 5;
-  padding:17%;
-  margin-top: -15%;
-  margin-left: 14%;
-}
-#step2:hover {
+
+#ingredients:hover {
   animation: shake 1s;
   animation-iteration-count: infinite;
 }
@@ -107,37 +107,46 @@ font-family: 'Hind Madurai', sans-serif;
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+@media only screen and (max-width:600px) {
+  #ingredients{
+    font-size: 5vmax;
+    margin-top: -20%;
+  }
+  li a{
+    font-size:0.8vmax;
+  }
+  ul.da{
+    width:20%;
+  }
+  #instructions{
+    font-size: 1vmax;
+  }
+  #b{
+    font-size: 0.6vmax;
+    margin-left: 35%;
+  }
+}
+
 </style>
 </head>
 <body>
+
 <ul class="da">
   <li><a href="recipe.html">⦿ HOME</a></li>
-  <li><a href="ingredients.html">☑ INGREDIENTS</a></li>
-  <li><a href="instructions.html">⇽ STEP1</a></li>
 </ul>
 
-<ul class="xi">
-  <li><a class="active" href="step3.html">⇾ STEP3</a></li>
-  <li><a class="active" href="step4.html">⇾ STEP4</a></li>
-  <li><a class="active" href="step5.html">⇾ STEP5</a></li>
-  <li><a class="active" href="step6.html">⇾ STEP6</a></li>
-  <li><a class="active" href="step7.html">⇾ STEP7</a></li>
-  <li><a class="active" href="step8.html">⇾ STEP8</a></li>
-</ul>
-
-
 <div>
-  <h1 id="instructions" class="instructions">Instructions</h1>
+  <h1 id="ingredients" class="ingredients">Ingredients</h1>
 </div>
 
 <div>
-  <h1 id="step2" class="step2">STEP2</h1>
+  <h1 id="b" class="b">500g of Pork ribs<br>One sweet corn<br>One carrot<br>Moderate amount of ginger<br>1 teaspoon of cooking wine<br>5 drops of white vinegar<br>Moderate amount of salt</h1>
 </div>
+
 
 <div>
-  <h1 id="yi" class="yi">After the ribs are washed,<br>add the ginger and garlic to the pot.</h1>
+ <h1 id="instructions" class="instructions"><a href="instructions.html" style=" text-decoration:none">INSTRUCTIONS</h1>
 </div>
-
 
 </body>
 </html>

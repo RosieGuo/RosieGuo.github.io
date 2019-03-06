@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
 @import url('https://fonts.googleapis.com/css?family=Hind+Madurai');
@@ -26,7 +28,7 @@ ul.xi {
 font-family: 'Dokdo', cursive;
   list-style-type: none;
   margin:0;
-  margin-top:7%;
+  margin-top:35%;
   padding: 0%;
   width: 16%;
   position: fixed;
@@ -47,9 +49,8 @@ li a {
 }
 li a.active {
   background-color:rgb(121, 139, 0);
-  font-size: 16pt;
-  margin-left: 40%;
-  padding:2%;
+  font-size: 40pt;
+  padding:1%;
   color:white;
 }
 li a:hover:not(.active) {
@@ -63,6 +64,7 @@ li a.s1 {
 li a:hover:not(.s1) {
  color:rgb(255, 165, 0);
 }
+
 #instructions{
 font-family: 'Dokdo', cursive;
     text-align: center;
@@ -71,7 +73,7 @@ font-family: 'Dokdo', cursive;
     margin-top: -2%;
     margin-left: 3%;
 }
-#step2{
+#step8{
 font-family: 'Dokdo', cursive;
   text-align: center;
   font-size: 50pt;
@@ -81,15 +83,16 @@ font-family: 'Dokdo', cursive;
 #yi{
 font-family: 'Hind Madurai', sans-serif;
   text-align: left;
-  font-size: 50pt;
+  font-size: 55pt;
   color:black;  
   line-height: 140%;
   font-weight: 5;
   padding:17%;
-  margin-top: -15%;
-  margin-left: 14%;
+  margin-top: -18%;
+  margin-left: 10%;
 }
-#step2:hover {
+
+#step8:hover {
   animation: shake 1s;
   animation-iteration-count: infinite;
 }
@@ -107,37 +110,58 @@ font-family: 'Hind Madurai', sans-serif;
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+@media only screen and (max-width:600px) {
+  #instructions{
+    font-size: 5vmax;
+  }
+  li a{
+    font-size:0.8vmax;
+  }
+  ul.da{
+    width:33%;
+  }
+  ul.xi{
+    width:11%;
+    margin-top: 63%;
+  }
+  li a.active{
+    font-size: 0.8vmax;
+  }
+  #step8{
+  font-size: 3vmax;
+}
+  #yi{
+    font-size: 2vmax;
+    padding: 19%;
+    margin-left: 17%;
+    margin-top: -15%;
+  }
+}
 </style>
 </head>
 <body>
+
 <ul class="da">
   <li><a href="recipe.html">⦿ HOME</a></li>
   <li><a href="ingredients.html">☑ INGREDIENTS</a></li>
-  <li><a href="instructions.html">⇽ STEP1</a></li>
+  <li><a href="step7.html">⇽ STEP7</a></li>
 </ul>
 
 <ul class="xi">
-  <li><a class="active" href="step3.html">⇾ STEP3</a></li>
-  <li><a class="active" href="step4.html">⇾ STEP4</a></li>
-  <li><a class="active" href="step5.html">⇾ STEP5</a></li>
-  <li><a class="active" href="step6.html">⇾ STEP6</a></li>
-  <li><a class="active" href="step7.html">⇾ STEP7</a></li>
-  <li><a class="active" href="step8.html">⇾ STEP8</a></li>
+  <li><a class="active" href="done.html">⇾ DONE!</a></li>
 </ul>
-
 
 <div>
   <h1 id="instructions" class="instructions">Instructions</h1>
 </div>
 
 <div>
-  <h1 id="step2" class="step2">STEP2</h1>
+  <h1 id="step8" class="step8">STEP8</h1>
 </div>
 
 <div>
-  <h1 id="yi" class="yi">After the ribs are washed,<br>add the ginger and garlic to the pot.</h1>
+  <h1 id="yi" class="yi">Finally,<br>poke the meat with chopsticks.<br>When the meat is soft,<br>you can turn off the fire,<br>taste the soup,<br>add salt.<br>(add MSG if you like)</h1>
 </div>
-
 
 </body>
 </html>
