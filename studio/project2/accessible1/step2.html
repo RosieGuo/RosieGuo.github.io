@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
 @import url('https://fonts.googleapis.com/css?family=Hind+Madurai');
@@ -28,7 +26,7 @@ ul.xi {
 font-family: 'Dokdo', cursive;
   list-style-type: none;
   margin:0;
-  margin-top:25%;
+  margin-top:7%;
   padding: 0%;
   width: 16%;
   position: fixed;
@@ -38,7 +36,7 @@ font-family: 'Dokdo', cursive;
 }
 li a {
   display: block;
-  color:#DB3A00;
+  color:rgb(255, 86, 27);
   margin-top:20%;
   margin-left:-7%;
   padding: 20% 20%;
@@ -48,7 +46,7 @@ li a {
   border-radius: 15% 20% 20%;
 }
 li a.active {
-  background-color:#667500;
+  background-color:rgb(121, 139, 0);
   font-size: 16pt;
   margin-left: 40%;
   padding:2%;
@@ -59,41 +57,39 @@ li a:hover:not(.active) {
 }
 
 li a.s1 {
-  color:#667500;
+  color:rgb(56, 172, 88);
   font-size:20pt;
 }
 li a:hover:not(.s1) {
  color:rgb(255, 165, 0);
 }
-
 #instructions{
 font-family: 'Dokdo', cursive;
     text-align: center;
     font-size: 80pt;
-  color:#667500;
+    color:rgb(121, 139, 0);
     margin-top: -2%;
     margin-left: 3%;
 }
-#step5{
+#step2{
 font-family: 'Dokdo', cursive;
   text-align: center;
   font-size: 50pt;
-  color:#667500;
+  color:rgb(121, 139, 0);
   margin-top: -2%;
 }
 #yi{
 font-family: 'Hind Madurai', sans-serif;
   text-align: left;
-  font-size: 4vmax;
+  font-size: 50pt;
   color:black;  
   line-height: 140%;
   font-weight: 5;
-  padding:15%;
-  margin-top: -13%;
-  margin-left: 15%;
+  padding:17%;
+  margin-top: -15%;
+  margin-left: 14%;
 }
-
-#step5:hover {
+#step2:hover {
   animation: shake 1s;
   animation-iteration-count: infinite;
 }
@@ -111,47 +107,19 @@ font-family: 'Hind Madurai', sans-serif;
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-@media only screen and (max-width:600px) {
-  #instructions{
-    font-size: 5.5vmax;
-    margin-top: -0.2%;
-  }
-  li a{
-    font-size:2vmax;
-  }
-  ul.da{
-    width:45%;
-    line-height: 0.1%;
-    padding-top: -8vmax;
-  }
-  ul.xi{
-    width:32%;
-    margin-top: 64%;
-  }
-  li a.active{
-    font-size: 2.3vmax;
-  }
-  #step5{
-  font-size: 3.5vmax;
-}
-  #yi{
-    font-size: 2.5vmax;
-    padding: 20%;
-    margin-left: 19%;
-    margin-top: -15%;
-  }
-}
 </style>
 </head>
 <body>
-
 <ul class="da">
   <li><a href="recipe.html">⦿ HOME</a></li>
   <li><a href="ingredients.html">☑ INGREDIENTS</a></li>
-  <li><a href="step4.html">⇽ STEP4</a></li>
+  <li><a href="instructions.html">⇽ STEP1</a></li>
 </ul>
 
 <ul class="xi">
+  <li><a class="active" href="step3.html">⇾ STEP3</a></li>
+  <li><a class="active" href="step4.html">⇾ STEP4</a></li>
+  <li><a class="active" href="step5.html">⇾ STEP5</a></li>
   <li><a class="active" href="step6.html">⇾ STEP6</a></li>
   <li><a class="active" href="step7.html">⇾ STEP7</a></li>
   <li><a class="active" href="step8.html">⇾ STEP8</a></li>
@@ -163,12 +131,13 @@ font-family: 'Hind Madurai', sans-serif;
 </div>
 
 <div>
-  <h1 id="step5" class="step5">STEP5</h1>
+  <h1 id="step2" class="step2">STEP2</h1>
 </div>
 
 <div>
   <h1 id="yi" class="yi">After the ribs are washed,<br>add the ginger and garlic to the pot.</h1>
 </div>
+
 
 </body>
 </html>

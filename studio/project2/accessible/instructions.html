@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
 @import url('https://fonts.googleapis.com/css?family=Hind+Madurai');
@@ -37,7 +39,7 @@ font-family: 'Dokdo', cursive;
 li a {
   display: block;
   font-family: 'Dokdo', cursive;
-  color:rgb(255, 86, 27);
+  color:#DB3A00;
   margin-top:20%;
   margin-left:-7%;
   padding: 20% 20%;
@@ -47,7 +49,7 @@ li a {
   border-radius: 15% 20% 20%;
 }
 li a.active {
-  background-color:rgb(121, 139, 0);
+  background-color:#667500;
   font-size:1.8vmax;
   margin-left: 40%;
   padding:2%;
@@ -58,7 +60,7 @@ li a:hover:not(.active) {
 }
 
 li a.s1 {
-  color:rgb(56, 172, 88);
+  color:#667500;
   font-size:2vmax;
 }
 li a:hover:not(.s1) {
@@ -69,7 +71,7 @@ li a:hover:not(.s1) {
 font-family: 'Dokdo', cursive;
     text-align: center;
   font-size: 8vmax;
-    color:rgb(121, 139, 0);
+    color:#667500;
     margin-top: -48%;
     margin-left: 3%;
 }
@@ -77,19 +79,19 @@ font-family: 'Dokdo', cursive;
 font-family: 'Dokdo', cursive;
   text-align: center;
   font-size: 5vmax;
-  color:rgb(121, 139, 0);
+  color:#667500;
   margin-top: -2%;
 }
 #yi{
 font-family: 'Hind Madurai', sans-serif;
   text-align: left;
-  font-size: 5vmax;
+  font-size: 4vmax;
   color:black;  
   line-height: 120%;
   font-weight: 5;
   padding:15%;
   margin-top: -12%;
-  margin-left: 15%;
+  margin-left: 18%;
 }
 #step1:hover {
   animation: shake 1s;
@@ -109,6 +111,33 @@ font-family: 'Hind Madurai', sans-serif;
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+@media only screen and (max-width:600px) {
+  #instructions{
+    font-size: 5.5vmax;
+    margin-top: -115%;
+  }
+  li a{
+    font-size:2vmax;
+  }
+  ul.da{
+    width:45%;
+  }
+  ul.xi{
+    width:32%;
+    right:-68%;
+    margin-top:-50%;
+  }
+  li a.active{
+    font-size: 2.3vmax;
+  }
+  #step1{
+  font-size: 3.5vmax;
+}
+  #yi{
+    font-size: 2.5vmax;
+    margin-left: 15%;
+  }
+}
 </style>
 </head>
 <body>
