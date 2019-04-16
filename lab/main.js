@@ -31,7 +31,7 @@ var currentHour = new Date().getHours();
 if(currentHour==11){
 	var x = "It is"+" "+11+" "+"now."
 } else{
-	var x = "It is "+"not"+" "+11+" "+"yet."
+	var x = "It is"+"not"+" "+11+" "+"yet."
 }
 console.log(x);
 
@@ -48,4 +48,30 @@ if(n<=9){
 console.log(g);
 
 
+var b = "43°F";
+console.log(b);
+
+
+var b = "55°F";
+console.log(b);
+
+var c = new toCelsius();
+console.log("The temperature in New York is " + toCelsius(43) + "Celsius"+ " "+"at"+ " "+time);
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
+
+var d = new toCelsius();
+console.log("The temperature in China is " + toCelsius(55) + "Celsius"+ " "+"at"+ " "+time);
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
+
+
+for (var i=30;i>-1;i--) {
+	var word = document.write("Countdown "+i+" days to holidays<br>")
+}
+	{
+	document.getElementById("text").style.color ='green';
+}
 
