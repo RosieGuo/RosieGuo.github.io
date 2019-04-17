@@ -56,22 +56,24 @@ var b = "55°F";
 console.log(b);
 
 var c = new toCelsius();
-console.log("The temperature in New York is " + toCelsius(43) + "Celsius"+ " "+"at"+ " "+time);
+console.log("The temperature in New York is " + toCelsius(43) + " Celsius"+ " "+"at"+ " "+time);
 function toCelsius(fahrenheit) {
   return (5/9) * (fahrenheit-32);
 } 
 
 var d = new toCelsius();
-console.log("The temperature in China is " + toCelsius(55) + "Celsius"+ " "+"at"+ " "+time);
+console.log("The temperature in China is " + toCelsius(55) + " Celsius"+ " "+"at"+ " "+time);
 function toCelsius(fahrenheit) {
   return (5/9) * (fahrenheit-32);
 } 
 
 
 for (var i=30;i>-1;i--) {
-	var word = document.write("Countdown "+i+" days to holidays<br>")
+	var word = document.write('<div id="text">'+'Countdown ' +i+ ' days to holiday<br>')
 }
 	{
 	document.getElementById("text").style.color ='green';
 }
+
+$('.mybox').append('<p class="newstyle">Hello!</p>');
 
