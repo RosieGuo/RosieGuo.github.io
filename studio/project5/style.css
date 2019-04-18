@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Hind|Noto+Sans+JP');
+@import url('https://fonts.googleapis.com/css?family=Hind');
+
+body{
+	background-color:rgb(240, 238, 233);
+}
+
+h1{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 60px;
+	margin: 0 auto;
+    width: 330px;
+    margin-top: 60px;
+}
+.p1{
+	font-family: 'Hind', sans-serif;
+	text-align: left;
+	display:block;
+	font-size: 25px;
+	margin: 0 auto;
+	width: 320px;
+	margin-top: 20px;
+	line-height: 46px;
+}
+.p2{
+	font-family: 'Hind', sans-serif;
+	text-align: left;
+	display:block;
+	font-size: 25px;
+	margin: 0 auto;
+	width: 320px;
+	margin-top: 30px;
+	line-height: 46px;
+}
+.p3{
+	font-family: 'Hind', sans-serif;
+	text-align: left;
+	display:block;
+	font-size: 25px;
+	margin: 0 auto;
+	width: 320px;
+	margin-top: 30px;
+	line-height: 46px;	
+}
+.p4{
+	font-family: 'Hind', sans-serif;
+	text-align: left;
+	display:block;
+	font-size: 25px;
+	margin: 0 auto;
+	width: 320px;
+	margin-top: 30px;
+	line-height: 46px;
+}
+.p5{
+	font-family: 'Hind', sans-serif;
+	text-align: left;
+	display:block;
+	font-size: 25px;
+	margin: 0 auto;
+	width: 340px;
+	margin-top: 30px;
+	line-height: 46px;
+	margin-left: 470px;
+}
+.p6{
+	font-family: 'Hind', sans-serif;
+	text-align: left;
+	display:block;
+	font-size: 25px;
+	margin: 0 auto;
+	width: 320px;
+	margin-top: 30px;
+	line-height: 46px;
+}
+.p7{
+	font-family: 'Hind', sans-serif;
+	text-align: left;
+	display:block;
+	font-size: 25px;
+	margin: 0 auto;
+	width: 390px;
+	margin-top: 30px;
+	line-height: 46px;
+	margin-left: 470px;
+}
+.p8{
+	font-family: 'Hind', sans-serif;
+	text-align: left;
+	display:block;
+	font-size: 25px;
+	margin: 0 auto;
+	width: 380px;
+	margin-top: 30px;
+	line-height: 46px;
+	margin-left: 470px;
+}
+
