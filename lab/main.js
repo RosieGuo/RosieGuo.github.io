@@ -72,8 +72,18 @@ for (var i=30;i>-1;i--) {
 	var word = document.write('<div id="text">'+'Countdown ' +i+ ' days to holiday<br>')
 }
 	{
-	document.getElementById("text").style.color ='green';
 }
 
 $('.mybox').append('<p class="newstyle">Hello!</p>');
+
+
+function bgChange(){
+  var c1 = Math.floor(Math.random() * 256);
+  var c2 = Math.floor(Math.random() * 256);
+  var c3 = Math.floor(Math.random() * 256);
+  var color = "rgb(" + c1 + "," + c2 + "," + c3 + ")"
+  document.body.style.color = color;
+}
+  console.log(bgChange);
+  bgChange()
 
