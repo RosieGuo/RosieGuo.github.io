@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Dokdo');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+#tu{
+	margin-left: 25%;
+}
+#fen{
+	margin-left: 25%;
+	margin-top: 5%;
+}
+#shi{
+	margin-left: 25%;
+	margin-top: 10%;
+}
+#clock {
+	width: 950px;
+	margin-left: 150px;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Dokdo', cursive;
+	z-index: 10;
+	position: relative;
+	color: #A2CAEB;
+}

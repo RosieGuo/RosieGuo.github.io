@@ -22,12 +22,11 @@ $(document).ready(function(){
             weatherdescription = results.weather[0].description;
             windspeed = results.wind.speed;
             winddeg = results.wind.deg;
-            tempmin = results.main.temp_min;
-            tempmax = results.main.temp_max;
             temp = results.main.temp;
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             cloudiness = results.clouds.all;
+            visibility = results.visibility;
 
             myWeatherInterpretation();
 
@@ -40,13 +39,12 @@ $(document).ready(function(){
         $('.p1').append('windspeed: ' + windspeed + '</br> ');
         $('.p1').append('winddeg: ' + winddeg + '</br> ');
         $('.p1').append('temp: ' + temp + '</br> ');
-        $('.p1').append('tempmin: ' + tempmin + '</br> ');
-        $('.p1').append('tempmax: ' + tempmax + '</br> ');
         $('.p1').append('pressure: ' + pressure + '</br> ');
         $('.p1').append('humidity: ' + humidity + '</br> ');
         $('.p1').append('weathertext: ' + weathertext + '</br> ');
         $('.p1').append('weatherdescription: ' + weatherdescription + '</br> ');
         $('.p1').append('cloudiness: ' + cloudiness + '</br> ');
+        $('.p1').append('visibility: ' + visibility + '</br> ');
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }     
 });
