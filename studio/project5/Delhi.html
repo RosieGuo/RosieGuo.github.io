@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<style>
+.Delhi {
+ height: 300px;	
+ overflow: hidden;
+ position: relative;
+}
+.Delhi h1 {
+ font-size: 13em;
+ color: black;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin-top: 120px;
+ line-height: 50px;
+ text-align: center;
+ transform:translateX(100%);
+ animation: Delhi linear infinite;
+}
+.Dlehi h1:hover{
+  opacity: 0.2;
+  transform:scale(1.3);
+}
+/* Move it (define the animation) */
+@keyframes Delhi {
+ 0%   { 
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ transform: translateX(-100%); 
+ }
+}
+</style>
+
+<script>
+$(function() {
+
+var url = 'http://api.openweathermap.org/data/2.5/weather?id=1273294&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e'
+
+  $.get(url, function(data) {
+
+var windspeed = data.wind.speed;
+    console.log(windspeed);
+        if (windspeed <= 1.9){
+            $(".Delhi h1").css("animation-duration", "3s");
+        } else if (windspeed <= 2.9){
+            $(".Delhi h1").css("animation-duration", "8s");
+        } else if (windspeed <= 3.9){
+            $(".Delhi h1").css("animation-duration", "15s");
+    	}else if (windspeed <= 4.9){
+            $(".Delhi h1").css("animation-duration", "20s");
+    	}else if (windspeed <= 5.9){
+            $(".Delhi h1").css("animation-duration", "25s");
+    	}else if (windspeed <= 6.9){
+            $(".Delhi h1").css("animation-duration", "30s");
+      }else if (windspeed <= 7.9){
+            $(".Delhi h1").css("animation-duration", "35s");
+      }else if (windspeed <= 8.9){
+            $(".Delhi h1").css("animation-duration", "40s");
+      }else if (windspeed <= 9.9){
+            $(".Delhi h1").css("animation-duration", "45s");
+      }
+    });
+});
+
+</script>
+<body>
+<div class="Delhi"><a href="studio3.html">
+	<h1>DELHI</h1><a href="studio3.html"></a>
+</div>
+
+</body>
+</html>

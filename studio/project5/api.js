@@ -37,23 +37,18 @@ $(document).ready(function(){
           
         //JUST SEEING IF THE VALUES COME THROUGH
         $('.p1').append('windspeed: ' + windspeed + '</br> ');
-        $('.p1').append('winddeg: ' + winddeg + '</br> ');
-        $('.p1').append('temp: ' + temp + '</br> ');
-        $('.p1').append('pressure: ' + pressure + '</br> ');
         $('.p1').append('humidity: ' + humidity + '</br> ');
-        $('.p1').append('weathertext: ' + weathertext + '</br> ');
-        $('.p1').append('weatherdescription: ' + weatherdescription + '</br> ');
         $('.p1').append('cloudiness: ' + cloudiness + '</br> ');
         $('.p1').append('visibility: ' + visibility + '</br> ');
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }     
 });
 
-    //Los Angeles
+    //Antananarivo
     $(document).ready(function(){
 
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=5368361&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=1070940&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
         success: function(results){
             weathertext = results.weather[0].main;
@@ -66,6 +61,7 @@ $(document).ready(function(){
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             cloudiness = results.clouds.all;
+            visibility = results.visibility;
 
             myWeatherInterpretation();
 
@@ -76,20 +72,85 @@ $(document).ready(function(){
           
         //JUST SEEING IF THE VALUES COME THROUGH
         $('.p2').append('windspeed: ' + windspeed + '</br> ');
-        $('.p2').append('winddeg: ' + winddeg + '</br> ');
-        $('.p2').append('temp: ' + temp + '</br> ');
-        $('.p2').append('tempmin: ' + tempmin + '</br> ');
-        $('.p2').append('tempmax: ' + tempmax + '</br> ');
-        $('.p2').append('pressure: ' + pressure + '</br> ');
         $('.p2').append('humidity: ' + humidity + '</br> ');
-        $('.p2').append('weathertext: ' + weathertext + '</br> ');
-        $('.p2').append('weatherdescription: ' + weatherdescription + '</br> ');
         $('.p2').append('cloudiness: ' + cloudiness + '</br> ');
+        $('.p2').append('visibility: ' + visibility + '</br> ');
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }   
 });
 
-    //Guangzhou
+    //Delhi
+    $(document).ready(function(){
+
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=1273294&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            windspeed = results.wind.speed;
+            winddeg = results.wind.deg;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            cloudiness = results.clouds.all;
+            visibility = results.visibility;
+
+            myWeatherInterpretation();
+
+        }
+    });
+    function myWeatherInterpretation(){
+        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
+          
+        //JUST SEEING IF THE VALUES COME THROUGH
+        $('.p4').append('windspeed: ' + windspeed + '</br> ');
+        $('.p4').append('humidity: ' + humidity + '</br> ');
+        $('.p4').append('cloudiness: ' + cloudiness + '</br> ');
+        $('.p4').append('visibility: ' + visibility + '</br> ');
+        //END OF MYWEATHERINTERPRETATION FUNCTION
+    }   
+});
+
+
+    //Athens
+    $(document).ready(function(){
+
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=1174872&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            windspeed = results.wind.speed;
+            winddeg = results.wind.deg;
+            tempmin = results.main.temp_min;
+            tempmax = results.main.temp_max;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            cloudiness = results.clouds.all;
+            visibility = results.visibility;
+
+            myWeatherInterpretation();
+
+        }
+    });
+    function myWeatherInterpretation(){
+        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
+          
+        //JUST SEEING IF THE VALUES COME THROUGH
+        $('.p5').append('windspeed: ' + windspeed + '</br> ');
+        $('.p5').append('humidity: ' + humidity + '</br> ');
+        $('.p5').append('cloudiness: ' + cloudiness + '</br> ');
+        $('.p5').append('visibility: ' + visibility + '</br> ');
+        //END OF MYWEATHERINTERPRETATION FUNCTION
+    }   
+});
+
+    //Tokyo
     $(document).ready(function(){
 
     $.ajax({
@@ -106,128 +167,7 @@ $(document).ready(function(){
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             cloudiness = results.clouds.all;
-
-            myWeatherInterpretation();
-
-        }
-    });
-    function myWeatherInterpretation(){
-        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
-          
-        //JUST SEEING IF THE VALUES COME THROUGH
-        $('.p3').append('windspeed: ' + windspeed + '</br> ');
-        $('.p3').append('winddeg: ' + winddeg + '</br> ');
-        $('.p3').append('temp: ' + temp + '</br> ');
-        $('.p3').append('tempmin: ' + tempmin + '</br> ');
-        $('.p3').append('tempmax: ' + tempmax + '</br> ');
-        $('.p3').append('pressure: ' + pressure + '</br> ');
-        $('.p3').append('humidity: ' + humidity + '</br> ');
-        $('.p3').append('weathertext: ' + weathertext + '</br> ');
-        $('.p3').append('weatherdescription: ' + weatherdescription + '</br> ');
-        $('.p3').append('cloudiness: ' + cloudiness + '</br> ');
-        //END OF MYWEATHERINTERPRETATION FUNCTION
-    }   
-});
-
-
-    //Beijing
-    $(document).ready(function(){
-
-    $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=1816670&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext = results.weather[0].main;
-            weatherdescription = results.weather[0].description;
-            windspeed = results.wind.speed;
-            winddeg = results.wind.deg;
-            tempmin = results.main.temp_min;
-            tempmax = results.main.temp_max;
-            temp = results.main.temp;
-            pressure = results.main.pressure;
-            humidity = results.main.humidity;
-            cloudiness = results.clouds.all;
-
-            myWeatherInterpretation();
-
-        }
-    });
-    function myWeatherInterpretation(){
-        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
-          
-        //JUST SEEING IF THE VALUES COME THROUGH
-        $('.p4').append('windspeed: ' + windspeed + '</br> ');
-        $('.p4').append('winddeg: ' + winddeg + '</br> ');
-        $('.p4').append('temp: ' + temp + '</br> ');
-        $('.p4').append('tempmin: ' + tempmin + '</br> ');
-        $('.p4').append('tempmax: ' + tempmax + '</br> ');
-        $('.p4').append('pressure: ' + pressure + '</br> ');
-        $('.p4').append('humidity: ' + humidity + '</br> ');
-        $('.p4').append('weathertext: ' + weathertext + '</br> ');
-        $('.p4').append('weatherdescription: ' + weatherdescription + '</br> ');
-        $('.p4').append('cloudiness: ' + cloudiness + '</br> ');
-        //END OF MYWEATHERINTERPRETATION FUNCTION
-    }   
-});
-
-
-    //Athens
-    $(document).ready(function(){
-
-    $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=264371&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext = results.weather[0].main;
-            weatherdescription = results.weather[0].description;
-            windspeed = results.wind.speed;
-            winddeg = results.wind.deg;
-            tempmin = results.main.temp_min;
-            tempmax = results.main.temp_max;
-            temp = results.main.temp;
-            pressure = results.main.pressure;
-            humidity = results.main.humidity;
-            cloudiness = results.clouds.all;
-
-            myWeatherInterpretation();
-
-        }
-    });
-    function myWeatherInterpretation(){
-        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
-          
-        //JUST SEEING IF THE VALUES COME THROUGH
-        $('.p5').append('windspeed: ' + windspeed + '</br> ');
-        $('.p5').append('winddeg: ' + winddeg + '</br> ');
-        $('.p5').append('temp: ' + temp + '</br> ');
-        $('.p5').append('tempmin: ' + tempmin + '</br> ');
-        $('.p5').append('tempmax: ' + tempmax + '</br> ');
-        $('.p5').append('pressure: ' + pressure + '</br> ');
-        $('.p5').append('humidity: ' + humidity + '</br> ');
-        $('.p5').append('weathertext: ' + weathertext + '</br> ');
-        $('.p5').append('weatherdescription: ' + weatherdescription + '</br> ');
-        $('.p5').append('cloudiness: ' + cloudiness + '</br> ');
-        //END OF MYWEATHERINTERPRETATION FUNCTION
-    }   
-});
-
-    //Tokyo
-    $(document).ready(function(){
-
-    $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=1850147&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext = results.weather[0].main;
-            weatherdescription = results.weather[0].description;
-            windspeed = results.wind.speed;
-            winddeg = results.wind.deg;
-            tempmin = results.main.temp_min;
-            tempmax = results.main.temp_max;
-            temp = results.main.temp;
-            pressure = results.main.pressure;
-            humidity = results.main.humidity;
-            cloudiness = results.clouds.all;
+            visibility = results.visibility;
 
             myWeatherInterpretation();
 
@@ -238,15 +178,9 @@ $(document).ready(function(){
           
         //JUST SEEING IF THE VALUES COME THROUGH
         $('.p6').append('windspeed: ' + windspeed + '</br> ');
-        $('.p6').append('winddeg: ' + winddeg + '</br> ');
-        $('.p6').append('temp: ' + temp + '</br> ');
-        $('.p6').append('tempmin: ' + tempmin + '</br> ');
-        $('.p6').append('tempmax: ' + tempmax + '</br> ');
-        $('.p6').append('pressure: ' + pressure + '</br> ');
         $('.p6').append('humidity: ' + humidity + '</br> ');
-        $('.p6').append('weathertext: ' + weathertext + '</br> ');
-        $('.p6').append('weatherdescription: ' + weatherdescription + '</br> ');
         $('.p6').append('cloudiness: ' + cloudiness + '</br> ');
+        $('.p6').append('visibility: ' + visibility + '</br> ');
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }   
 });
@@ -268,6 +202,7 @@ $(document).ready(function(){
             pressure = results.main.pressure;
             humidity = results.main.humidity;
             cloudiness = results.clouds.all;
+            visibility = results.visibility;
 
             myWeatherInterpretation();
 
@@ -278,55 +213,9 @@ $(document).ready(function(){
           
         //JUST SEEING IF THE VALUES COME THROUGH
         $('.p7').append('windspeed: ' + windspeed + '</br> ');
-        $('.p7').append('winddeg: ' + winddeg + '</br> ');
-        $('.p7').append('temp: ' + temp + '</br> ');
-        $('.p7').append('tempmin: ' + tempmin + '</br> ');
-        $('.p7').append('tempmax: ' + tempmax + '</br> ');
-        $('.p7').append('pressure: ' + pressure + '</br> ');
         $('.p7').append('humidity: ' + humidity + '</br> ');
-        $('.p7').append('weathertext: ' + weathertext + '</br> ');
-        $('.p7').append('weatherdescription: ' + weatherdescription + '</br> ');
         $('.p7').append('cloudiness: ' + cloudiness + '</br> ');
-        //END OF MYWEATHERINTERPRETATION FUNCTION
-    }   
-});
-
-    //Paris
-    $(document).ready(function(){
-
-    $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=2988507&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext = results.weather[0].main;
-            weatherdescription = results.weather[0].description;
-            windspeed = results.wind.speed;
-            winddeg = results.wind.deg;
-            tempmin = results.main.temp_min;
-            tempmax = results.main.temp_max;
-            temp = results.main.temp;
-            pressure = results.main.pressure;
-            humidity = results.main.humidity;
-            cloudiness = results.clouds.all;
-
-            myWeatherInterpretation();
-
-        }
-    });
-    function myWeatherInterpretation(){
-        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
-          
-        //JUST SEEING IF THE VALUES COME THROUGH
-        $('.p8').append('windspeed: ' + windspeed + '</br> ');
-        $('.p8').append('winddeg: ' + winddeg + '</br> ');
-        $('.p8').append('temp: ' + temp + '</br> ');
-        $('.p8').append('tempmin: ' + tempmin + '</br> ');
-        $('.p8').append('tempmax: ' + tempmax + '</br> ');
-        $('.p8').append('pressure: ' + pressure + '</br> ');
-        $('.p8').append('humidity: ' + humidity + '</br> ');
-        $('.p8').append('weathertext: ' + weathertext + '</br> ');
-        $('.p8').append('weatherdescription: ' + weatherdescription + '</br> ');
-        $('.p8').append('cloudiness: ' + cloudiness + '</br> ');
+        $('.p7').append('visibility: ' + visibility + '</br> ');  
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }   
 });
