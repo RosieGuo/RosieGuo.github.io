@@ -13,7 +13,7 @@
 }
 .London h1 {
  font-size: 13em;
- color: black;
+ color: white;
  position: absolute;
  width: 100%;
  height: 100%;
@@ -65,10 +65,36 @@ var windspeed = data.wind.speed;
     });
 });
 
+//temp
+$(function() {
+
+var url = 'http://api.openweathermap.org/data/2.5/weather?id=2643743&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e'
+
+  $.get(url, function(data) {
+
+var temp = data.main.temp;
+    console.log(temp);
+        if (temp <= 5){
+            $("body").css("background-color", "#40FF7F");
+        } else if (temp <= 10){
+            $("body").css("background-color", "#3A9A20");
+        } else if (temp <= 15){
+            $("body").css("background-color", "#FFFC86");
+      }else if (temp <= 20){
+            $("body").css("background-color", "#FCECA4");
+      }else if (temp <= 25){
+            $("body").css("background-color", "#FF9C15");
+      }else if (temp <= 30){
+            $("body").css("background-color", "#CE2115");
+      }else if (temp <= 35){
+            $("body").css("background-color", "#860100");
+      }
+    });
+});
 </script>
 <body>
-<div class="London">
-	<h1>LONDON</h1>
+<div class="London"><a href="studio3.html">
+	<h1>LONDON</h1></a>
 </div>
 
 </body>

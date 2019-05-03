@@ -40,6 +40,7 @@ $(document).ready(function(){
         $('.p1').append('humidity: ' + humidity + '</br> ');
         $('.p1').append('cloudiness: ' + cloudiness + '</br> ');
         $('.p1').append('visibility: ' + visibility + '</br> ');
+        $('.p1').append('temp: ' + temp + '</br> ');
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }     
 });
@@ -75,6 +76,7 @@ $(document).ready(function(){
         $('.p2').append('humidity: ' + humidity + '</br> ');
         $('.p2').append('cloudiness: ' + cloudiness + '</br> ');
         $('.p2').append('visibility: ' + visibility + '</br> ');
+        $('.p2').append('temp: ' + temp + '</br> ');
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }   
 });
@@ -110,6 +112,7 @@ $(document).ready(function(){
         $('.p4').append('humidity: ' + humidity + '</br> ');
         $('.p4').append('cloudiness: ' + cloudiness + '</br> ');
         $('.p4').append('visibility: ' + visibility + '</br> ');
+        $('.p4').append('temp: ' + temp + '</br> ');
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }   
 });
@@ -146,11 +149,12 @@ $(document).ready(function(){
         $('.p5').append('humidity: ' + humidity + '</br> ');
         $('.p5').append('cloudiness: ' + cloudiness + '</br> ');
         $('.p5').append('visibility: ' + visibility + '</br> ');
+        $('.p5').append('temp: ' + temp + '</br> ');
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }   
 });
 
-    //Tokyo
+    //Guangzhou
     $(document).ready(function(){
 
     $.ajax({
@@ -181,6 +185,7 @@ $(document).ready(function(){
         $('.p6').append('humidity: ' + humidity + '</br> ');
         $('.p6').append('cloudiness: ' + cloudiness + '</br> ');
         $('.p6').append('visibility: ' + visibility + '</br> ');
+        $('.p6').append('temp: ' + temp + '</br> ');
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }   
 });
@@ -215,7 +220,8 @@ $(document).ready(function(){
         $('.p7').append('windspeed: ' + windspeed + '</br> ');
         $('.p7').append('humidity: ' + humidity + '</br> ');
         $('.p7').append('cloudiness: ' + cloudiness + '</br> ');
-        $('.p7').append('visibility: ' + visibility + '</br> ');  
+        $('.p7').append('visibility: ' + visibility + '</br> '); 
+        $('.p7').append('temp: ' + temp + '</br> '); 
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }   
 });
