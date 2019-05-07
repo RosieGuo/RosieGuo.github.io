@@ -6,21 +6,23 @@
 
 </head>
 <style>
-    body {background: gray;}
+@import url('https://fonts.googleapis.com/css?family=Marcellus+SC');
 
 .nyy {
  height: 300px;	
  overflow: hidden;
  position: relative;
+ text-decoration: none;
 }
-.nyy h1 {
- font-size: 13em;
+.nyy h1{
+font-family: 'Marcellus SC', serif;
+ font-size: 26em;
  color: black;
  position: relative;
  width: 100%;
  height: 100%;
- margin-top: 10px;
- line-height: 150px;
+ margin-top: 120px;
+ line-height: 50px;
  text-align: center;
  transform:translateX(100%);
  animation: nyy linear infinite;
@@ -31,7 +33,7 @@
  transform: translateX(100%); 		
  }
  100% { 
- transform: translateX(-440%); 
+ transform: translateX(-400%); 
  }
 }
 </style>
@@ -93,10 +95,43 @@ var temp = data.main.temp;
       }
     });
 });
+
+//humidity
+$(function() {
+
+var url = 'http://api.openweathermap.org/data/2.5/weather?id=5128581&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e'
+
+  $.get(url, function(data) {
+
+var humidity = data.main.humidity;
+    console.log(humidity);
+        if (humidity <= 10){
+            $(".nyy h1").css("color", "rgb(255, 255, 255)");
+        } else if (humidity <= 20){
+            $(".nyy h1").css("color", "rgb(240, 240, 240)");
+        } else if (humidity <= 30){
+            $(".nyy h1").css("color", "rgb(230, 230, 230)");
+      }else if (humidity <= 40){
+            $(".nyy h1").css("color", "rgb(200, 200, 200)");
+      }else if (humidity <= 50){
+            $(".nyy h1").css("color", "rgb(180, 180, 180)");
+      }else if (humidity <= 60){
+            $(".nyy h1").css("color", "rgb(160, 160, 160)");
+      }else if (humidity <= 70){
+            $(".nyy h1").css("color", "rgb(120, 120, 120)");
+      }else if (humidity <= 80){
+            $(".nyy h1").css("color", "rgb(100, 100, 100)");
+      }else if (humidity <= 90){
+            $(".nyy h1").css("color", "rgb(60, 60, 60)");
+      }else if (humidity <= 100){
+            $(".nyy h1").css("color", "rgb(0, 0, 0)");
+      }
+    });
+});
 </script>
 <body>
-<div class="nyy"><a href="studio3.html">
-	<h1>NEWYORKNEWYORK<br>NEWYORKNEWYORK</h1></a>
+<div class="nyy"><a href="nyy.html">
+  <h1>NEWYORK</h1></a>
 </div>
 
 </body>

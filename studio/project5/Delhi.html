@@ -6,13 +6,16 @@
 
 </head>
 <style>
+@import url('https://fonts.googleapis.com/css?family=Marcellus+SC');
+
 .Delhi {
  height: 300px;	
  overflow: hidden;
  position: relative;
 }
 .Delhi h1 {
- font-size: 13em;
+font-family: 'Marcellus SC', serif;
+ font-size: 26em;
  color: black;
  position: absolute;
  width: 100%;
@@ -23,17 +26,13 @@
  transform:translateX(100%);
  animation: Delhi linear infinite;
 }
-.Dlehi h1:hover{
-  opacity: 0.2;
-  transform:scale(1.3);
-}
 /* Move it (define the animation) */
 @keyframes Delhi {
  0%   { 
  transform: translateX(100%); 		
  }
  100% { 
- transform: translateX(-100%); 
+ transform: translateX(-220%); 
  }
 }
 </style>
@@ -96,10 +95,42 @@ var temp = data.main.temp;
     });
 });
 
+//humidity
+$(function() {
+
+var url = 'http://api.openweathermap.org/data/2.5/weather?id=1273294&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e'
+
+  $.get(url, function(data) {
+
+var humidity = data.main.humidity;
+    console.log(humidity);
+        if (humidity <= 10){
+            $(".Delhi h1").css("color", "rgb(255, 255, 255)");
+        } else if (humidity <= 20){
+            $(".Delhi h1").css("color", "rgb(240, 240, 240)");
+        } else if (humidity <= 30){
+            $(".Delhi h1").css("color", "rgb(230, 230, 230)");
+      }else if (humidity <= 40){
+            $(".Delhi h1").css("color", "rgb(200, 200, 200)");
+      }else if (humidity <= 50){
+            $(".Delhi h1").css("color", "rgb(180, 180, 180)");
+      }else if (humidity <= 60){
+            $(".Delhi h1").css("color", "rgb(160, 160, 160)");
+      }else if (humidity <= 70){
+            $(".Delhi h1").css("color", "rgb(120, 120, 120)");
+      }else if (humidity <= 80){
+            $(".Delhi h1").css("color", "rgb(100, 100, 100)");
+      }else if (humidity <= 90){
+            $(".Delhi h1").css("color", "rgb(60, 60, 60)");
+      }else if (humidity <= 100){
+            $(".Delhi h1").css("color", "rgb(0, 0, 0)");
+      }
+    });
+});
 </script>
 <body>
-<div class="Delhi"><a href="studio3.html">
-	<h1>DELHIDELHI</h1></a>
+<div class="Delhi"><a href="delhii.html">
+	<h1>DELHI</h1></a>
 </div>
 
 </body>

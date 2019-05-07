@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html>     
+    <head> 
+        <title></title> 
+        	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        	    <script src="api.js" type="text/javascript"></script>
+        	    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    </head> 
+ 
+ <style>
+input {
+ margin-left: 150px;
+}
+
+hr{
+  margin-top: 10%;
+  border-top: 3px dashed white;
+}
+</style>
+
+<body>
+<input type="file" accept="image/*" onchange="loadFile(event)">
+<img id="output" border="8" width="600" height="250"/>
+
+<hr>
+
+<div class="london tooltip" id="london-Select">
+  <div class="london"></div>
+LONDON
+   <span class="p7 tooltiptext"></span>
+   
+</div>
+
+</body>
+
+<script>
+  var loadFile = function(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+      var output = document.getElementById('output');
+      output.src = reader.result;
+    };
+    reader.readAsDataURL(event.target.files[0]);
+  };
+
+//visibility
+$(function() {
+
+var url = 'http://api.openweathermap.org/data/2.5/weather?id=2643743&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e'
+
+  $.get(url, function(data) {
+
+var visibility = data.visibility;
+    console.log(visibility);
+        if (visibility <= 2000){
+            $("img").css("opacity", "0.1");
+        } else if (visibility <= 5000){
+            $("img").css("opacity", "0.2");
+        } else if (visibility <= 8000){
+            $("img").css("opacity", "0.3");
+      }else if (visibility <= 11000){
+            $("img").css("opacity", "0.4");
+      }else if (visibility <= 14000){
+            $("img").css("opacity", "0.6");
+      }else if (visibility <= 17000){
+            $("img").css("opacity", "0.8");
+      }else if (visibility <= 20000){
+            $("img").css("opacity", "1");
+      }
+    });
+});
+
+
+//cloudiness
+$(function() {
+
+var url = 'http://api.openweathermap.org/data/2.5/weather?id=2643743&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e'
+
+  $.get(url, function(data) {
+
+var cloudiness = data.clouds.all;
+    console.log(cloudiness);
+        if (cloudiness <= 10){
+            $("img").css("border-color", "#A6CCE8");
+        } else if (cloudiness <= 20){
+            $("img").css("border-color", "#8ECCE8");
+        } else if (cloudiness <= 30){
+            $("img").css("border-color", "#64CCE8");
+      }else if (cloudiness <= 40){
+            $("img").css("border-color", "#46C4E8");
+      }else if (cloudiness <= 50){
+            $("img").css("border-color", "#46AEE8");
+      }else if (cloudiness <= 60){
+            $("img").css("border-color", "#46A2E8");
+      }else if (cloudiness <= 70){
+            $("img").css("border-color", "#9CD0E2");
+      }else if (cloudiness <= 80){
+            $("img").css("border-color", "#AAD0E2");
+      }else if (cloudiness <= 90){
+            $("img").css("border-color", "#B2D0E2");
+      }else if (cloudiness <= 100){
+            $("img").css("border-color", "#BCD0E2");
+      }
+    });
+});
+
+</script>
+
+</html>

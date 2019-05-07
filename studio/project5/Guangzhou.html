@@ -6,18 +6,21 @@
 
 </head>
 <style>
+@import url('https://fonts.googleapis.com/css?family=Marcellus+SC');
+
 .Guangzhou {
  height: 300px;	
  overflow: hidden;
  position: relative;
 }
-.Guangzhou h1 {
- font-size: 13em;
+.Guangzhou h1{
+font-family: 'Marcellus SC', serif;
+ font-size: 26em;
  color: black;
  position: absolute;
  width: 100%;
  height: 100%;
- margin-top: 120px;
+ margin-top: 130px;
  line-height: 50px;
  text-align: center;
  transform:translateX(100%);
@@ -29,7 +32,7 @@
  transform: translateX(100%); 		
  }
  100% { 
- transform: translateX(-100%); 
+ transform: translateX(-500%); 
  }
 }
 </style>
@@ -91,9 +94,42 @@ var temp = data.main.temp;
       }
     });
 });
+
+//humidity
+$(function() {
+
+var url = 'http://api.openweathermap.org/data/2.5/weather?id=1809858&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e'
+
+  $.get(url, function(data) {
+
+var humidity = data.main.humidity;
+    console.log(humidity);
+        if (humidity <= 10){
+            $(".Guangzhou h1").css("color", "rgb(255, 255, 255)");
+        } else if (humidity <= 20){
+            $(".Guangzhou h1").css("color", "rgb(240, 240, 240)");
+        } else if (humidity <= 30){
+            $(".Guangzhou h1").css("color", "rgb(230, 230, 230)");
+      }else if (humidity <= 40){
+            $(".Guangzhou h1").css("color", "rgb(220, 220, 220)");
+      }else if (humidity <= 50){
+            $(".Guangzhou h1").css("color", "rgb(210, 210, 210)");
+      }else if (humidity <= 60){
+            $(".Guangzhou h1").css("color", "rgb(200, 200, 200)");
+      }else if (humidity <= 70){
+            $(".Guangzhou h1").css("color", "rgb(160, 160, 160)");
+      }else if (humidity <= 80){
+            $(".Guangzhou h1").css("color", "rgb(80, 80, 80)");
+      }else if (humidity <= 90){
+            $(".Guangzhou h1").css("color", "rgb(60, 60, 60)");
+      }else if (humidity <= 100){
+            $(".Guangzhou h1").css("color", "rgb(0, 0, 0)");
+      }
+    });
+});
 </script>
 <body>
-<div class="Guangzhou"><a href="studio3.html">
+<div class="Guangzhou"><a href="gz.html">
 	<h1>GUANGZHOU</h1></a>
 </div>
 

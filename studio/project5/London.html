@@ -6,18 +6,21 @@
 
 </head>
 <style>
+@import url('https://fonts.googleapis.com/css?family=Marcellus+SC');
+
 .London {
  height: 300px;	
  overflow: hidden;
  position: relative;
 }
 .London h1 {
- font-size: 13em;
+font-family: 'Marcellus SC', serif;
+ font-size: 25em;
  color: white;
  position: absolute;
  width: 100%;
  height: 100%;
- margin-top: 120px;
+ margin-top: 130px;
  line-height: 50px;
  text-align: center;
  transform:translateX(100%);
@@ -29,7 +32,7 @@
  transform: translateX(100%); 		
  }
  100% { 
- transform: translateX(-100%); 
+ transform: translateX(-340%); 
  }
 }
 </style>
@@ -91,9 +94,42 @@ var temp = data.main.temp;
       }
     });
 });
+
+//humidity
+$(function() {
+
+var url = 'http://api.openweathermap.org/data/2.5/weather?id=2643743&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e'
+
+  $.get(url, function(data) {
+
+var humidity = data.main.humidity;
+    console.log(humidity);
+        if (humidity <= 10){
+            $(".London h1").css("color", "rgb(255, 255, 255)");
+        } else if (humidity <= 20){
+            $(".London h1").css("color", "rgb(240, 240, 240)");
+        } else if (humidity <= 30){
+            $(".London h1").css("color", "rgb(230, 230, 230)");
+      }else if (humidity <= 40){
+            $(".London h1").css("color", "rgb(200, 200, 200)");
+      }else if (humidity <= 50){
+            $(".London h1").css("color", "rgb(180, 180, 180)");
+      }else if (humidity <= 60){
+            $(".London h1").css("color", "rgb(160, 160, 160)");
+      }else if (humidity <= 70){
+            $(".London h1").css("color", "rgb(120, 120, 120)");
+      }else if (humidity <= 80){
+            $(".London h1").css("color", "rgb(100, 100, 100)");
+      }else if (humidity <= 90){
+            $(".London h1").css("color", "rgb(60, 60, 60)");
+      }else if (humidity <= 100){
+            $(".London h1").css("color", "rgb(0, 0, 0)");
+      }
+    });
+});
 </script>
 <body>
-<div class="London"><a href="studio3.html">
+<div class="London"><a href="londonn.html">
 	<h1>LONDON</h1></a>
 </div>
 

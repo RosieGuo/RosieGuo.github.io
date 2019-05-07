@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather-graphic</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<style>
+@import url("https://use.typekit.net/ljd8xcw.css");
+
+.HK{
+ font-family:futura-pt, sans-serif;
+ font-size:40px;
+ margin-left:50px;
+ margin-top:50px;
+
+}
+.p1{
+ font-family:futura-pt, sans-serif;
+ text-align: left;
+ display:block;
+ font-size: 25px;
+ line-height: 40px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  opacity:40%;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.h{
+ position:absolute;
+ margin-top:0px;
+ margin-left:0px;
+ width:50vh auto;
+ height: 50vh auto;
+ z-index:-2;
+}
+
+</style>
+<body>
+<div class="HK tooltip" id="HK-Select">
+  <div class="h"></div>
+  Hong Kong
+   <span class="p1 tooltiptext"></span>
+   
+</div>
+
+</body>
+
+<script>
+//THESE ARE THE VARIABLES WE WILL USE
+//THESE ARE THE VARIABLES WE WILL USE
+var windspeed; //Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour.
+var winddeg; //Wind direction, degrees (meteorological)
+var temp; //Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. 
+var tempmin;
+var tempmax;
+var pressure; //Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa
+var humidity; //Humidity, %
+var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
+var weatherdescription; //Weather condition within the group
+var cloudiness; //Cloudiness, %
+
+
+$(document).ready(function(){
+
+    $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=5128581&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            windspeed = results.wind.speed;
+            winddeg = results.wind.deg;
+            temp = results.main.temp;
+            pressure = results.main.pressure;
+            humidity = results.main.humidity;
+            cloudiness = results.clouds.all;
+            visibility = results.visibility;
+
+            myWeatherInterpretation();
+
+        }
+    });
+    function myWeatherInterpretation(){
+        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
+          
+        //JUST SEEING IF THE VALUES COME THROUGH
+        $('.p1').append('windspeed: ' + windspeed + '</br> ');
+        $('.p1').append('humidity: ' + humidity + '</br> ');
+        $('.p1').append('cloudiness: ' + cloudiness + '</br> ');
+        $('.p1').append('visibility: ' + visibility + '</br> ');
+        $('.p1').append('temp: ' + temp + '</br> ');
+        //END OF MYWEATHERINTERPRETATION FUNCTION
+    }     
+});
+</script>
+</html>
