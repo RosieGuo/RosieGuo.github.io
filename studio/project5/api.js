@@ -15,7 +15,7 @@ var cloudiness; //Cloudiness, %
 $(document).ready(function(){
 
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=5128581&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
+        url: 'https://api.openweathermap.org/data/2.5/weather?id=5128581&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
         success: function(results){
             weathertext = results.weather[0].main;
@@ -49,7 +49,7 @@ $(document).ready(function(){
     $(document).ready(function(){
 
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=1070940&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
+        url: 'https://api.openweathermap.org/data/2.5/weather?id=1070940&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
         success: function(results){
             weathertext = results.weather[0].main;
@@ -85,7 +85,7 @@ $(document).ready(function(){
     $(document).ready(function(){
 
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=1273294&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
+        url: 'https://api.openweathermap.org/data/2.5/weather?id=1273294&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
         success: function(results){
             weathertext = results.weather[0].main;
@@ -122,7 +122,7 @@ $(document).ready(function(){
     $(document).ready(function(){
 
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=1174872&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
+        url: 'https://api.openweathermap.org/data/2.5/weather?id=1174872&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
         success: function(results){
             weathertext = results.weather[0].main;
@@ -158,7 +158,7 @@ $(document).ready(function(){
     $(document).ready(function(){
 
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=1809858&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
+        url: 'https://api.openweathermap.org/data/2.5/weather?id=1809858&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
         success: function(results){
             weathertext = results.weather[0].main;
@@ -194,7 +194,7 @@ $(document).ready(function(){
     $(document).ready(function(){
 
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=2643743&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
+        url: 'https://api.openweathermap.org/data/2.5/weather?id=2643743&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
         success: function(results){
             weathertext = results.weather[0].main;
