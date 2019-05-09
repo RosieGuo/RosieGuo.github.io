@@ -25,8 +25,10 @@ font-family: 'Marcellus SC', serif;
  text-align: center;
  transform:translateX(100%);
  animation: Delhi linear infinite;
- transition: color 2s ease-out;
-
+  transition: .5s ease-in-out;
+}
+.Delhi h1:hover {
+  text-shadow: 2px 2px 0 #FFE3BD, 3px 3px 0 #FFE3BD, 4px 4px 0 #FFE3BD, 5px 5px 0 #FFE3BD, 6px 6px 0 #FFE3BD;
 }
 /* Move it (define the animation) */
 @keyframes Delhi {
@@ -93,6 +95,8 @@ var temp = data.main.temp;
             $("body").css("background-color", "#CE2115");
       }else if (temp <= 35){
             $("body").css("background-color", "#860100");
+      }else if (temp <= 40){
+            $("body").css("background-color", "#7f1919");
       }
     });
 });
@@ -131,7 +135,7 @@ var humidity = data.main.humidity;
 });
 </script>
 <body>
-<div class="Delhi"><a href="delhii.html">
+<div class="Delhi"><a href="d.html">
 	<h1>DELHI</h1></a>
 </div>
 

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Marcellus+SC');
+
+.container {
+font-family: 'Marcellus SC', serif;
+  max-width: 400px;
+  width: 100%;
+  margin: 50vh auto 0 auto;
+}
+
+.hello-box {
+  cursor:pointer;
+  background: linear-gradient(to right, #000000 50%, #ffffff 50%);
+  background-size: 200%;
+  background-position: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  margin: 0 0;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  width: 100%;
+  text-align:center;
+  transition: all .5s ease-in;
+  background-clip: text, border-box;
+  margin-top: -5vw;
+  text-decoration: none;
+}
+
+.hello-box h1 {
+  font-weight: 300;
+  color: #ffffff;
+  mix-blend-mode: difference;
+  text-decoration: none;
+}
+
+.hello-box:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  border-top: 4px solid #000; 
+  border-left: 4px solid #000;
+  transition: all .5s ease-in-out .5s;
+  text-decoration: none;
+}
+
+.hello-box a:after {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  border-bottom: 4px solid #000; 
+  border-right: 4px solid #000;
+  transition: all .5s ease-in-out .5s;
+}
+a{
+	text-decoration: none;
+}
+.hello-box:hover:before,
+.hello-box:hover:after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+    text-decoration: none;
+
+}
+
+.hello-box:hover {
+  background-position: 0%;
+  transition: all .5s ease-in-out .3s;
+  box-shadow: 10px 10px 50px rgba(0,0,0,.5);
+    text-decoration: none;
+
+}
+
+.hello-box a:active {
+  box-shadow: 0px 0px 0px rgba( 0,0,0,0);
+  letter-spacing: .5rem;
+  transform: scale(1.05);
+  transition: all .05s ease-in-out;
+    text-decoration: none;
+
+}
+
+</style>
+<body>
+<div class="container">
+  <div class="hello-box"><a href="page.html">
+    <h1>WEATHER</h1></a>
+  </div>
+</div>
+</body>
+</html>

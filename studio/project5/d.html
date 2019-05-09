@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+              <script src="api.js" type="text/javascript"></script>
+              <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+.l-wrapper {
+  padding: 2vw;
+}
+
+.button {
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  height: 70vh;
+  min-height: 5vw;
+  padding: 12vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size:12vw;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  vertical-align: top;
+  color: #3498DA;
+  border: 0;
+  z-index: 10;
+  margin-left: 8vw;
+    margin-top: -10vw;
+
+}
+.button:hover {
+  color: red;
+}
+
+.button:active {
+  color: #4d4d4d;
+  background-color: #807da7;
+}
+
+.button__top-text.is-visible {
+  position: relative;
+  top: 0;
+}
+
+.button__bottom-text.is-hidden {
+  position: absolute;
+  top: 100vw;
+  right: 0;
+  left: 0;
+}
+
+.button-transition-text .button__bottom-text,
+.button-transition-text .button__top-text {
+  transition: top 0.4s, margin-top 0.4s;
+}
+
+.button-transition-text:hover .button__bottom-text.is-hidden {
+  top: 12vw;
+  margin-top: -3vw;
+}
+
+.button-transition-text:hover .button__top-text.is-visible {
+  top: -70vw;
+}
+div {
+  transition: .5s ease-in-out;
+}
+.box {
+  width: 100vw; 
+  margin: 0 auto 40px; 
+  position: relative;
+}
+.seven {
+  width: 105vw;
+  height: 300vh;
+  margin: 0 auto;
+  background-color: white;
+  background-image: -webkit-radial-gradient(#9ed8d3 2px, rgba(255,0,0,0) 3px);
+  background-image: -o-radial-gradient(#9ed8d3 2px, rgba(255,0,0,0) 3px);
+  background-image: radial-gradient(#9ed8d3 2px, transparent 3px);
+  background-size: 10px 10px;
+  margin-top:-100vw;
+  margin-left: -6vw;
+}
+.seven:hover {
+  background-size: 20px 20px;
+}
+</style>
+<body>
+<article class="l-wrapper">
+
+<div class="delhi"><a href="delhii.html">
+
+    <button type="button" class="button button-transition-text">
+      <span class="button__top-text is-visible">
+DELHI     
+      </span>
+      <span class="button__bottom-text is-hidden">
+MAKE A PIC      </span>
+    </button></a>
+  </div>
+
+<div class="delhi tooltip" id="delhi-Select">
+  <div class="delhi">DELHI</div>
+
+   <span class="p4 tooltiptext"></span>
+   
+</div>
+
+  <div class="box"><div class="seven"><kbd></kbd></div></div>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -9,17 +9,22 @@ body{
 	font-family: 'Hind', sans-serif;
 	text-align: left;
 	display:block;
-	font-size: 50px;
-	line-height: 60px;
-  margin-left: 30%;
-  margin-top: 30px;
+	font-size: 8vw;
+	line-height: 6vw;
+  margin-left: 3vw;
+  margin-top: 10vw;
+   z-index: 10;
+  color: #3498DA;
 }
 .p1{
 	font-family: 'Hind', sans-serif;
  text-align: left;
  display:block;
- font-size: 25px;
- line-height: 40px;
+ font-size: 4vw;
+ line-height: 6vw;
+  z-index: 10;
+   margin-left: 3vw;
+
 }
 .tooltip {
   position: relative;
@@ -28,7 +33,7 @@ body{
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 300px;
+  width: 30vw;
   background-color: #BCD0E2;
   color: #fff;
   text-align: center;
@@ -47,26 +52,31 @@ body{
 	font-family: 'Hind', sans-serif;
 	text-align: left;
 	display:block;
-	font-size: 50px;
+	font-size: 8vw;
 	line-height: 60px;
-  margin-left: 30%;
-  margin-top: 30px;
+  margin-left: 10vw;
+  margin-top: 10vw;
+   z-index: 10;
+  color: #3498DA;
 }
 .p4{
 	font-family: 'Hind', sans-serif;
  text-align: left;
  display:block;
- font-size: 25px;
- line-height: 40px;
+ font-size: 4vw;
+ line-height: 6vw;
+  z-index: 10;
+   margin-left: 10vw;
 }
 .tooltip {
   position: relative;
   display: inline-block;
+    margin-top: 3vw;
+    margin-left: 28vw;
 }
-
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 300px;
+  width: 30vw;
   background-color: #BCD0E2;
   color: #fff;
   text-align: center;
@@ -75,9 +85,8 @@ body{
   opacity:40%;
   /* Position the tooltip */
   position: absolute;
-  z-index: 1;
+  z-index: 10;
 }
-
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
@@ -85,17 +94,22 @@ body{
 	font-family: 'Hind', sans-serif;
 	text-align: left;
 	display:block;
-	font-size: 50px;
-	line-height: 60px;
-  margin-left: 30%;
-  margin-top: 30px;
+	font-size: 8vw;
+	line-height: 6vw;
+  margin-left: 3vw;
+  margin-top: 10vw;
+   z-index: 10;
+  color: #3498DA;
 }
 .p6{
 	font-family: 'Hind', sans-serif;
  text-align: left;
  display:block;
- font-size: 25px;
- line-height: 40px;
+ font-size: 4vw;
+ line-height: 6vw;
+  z-index: 10;
+   margin-left: 3vw;
+
 }
 .tooltip {
   position: relative;
@@ -104,7 +118,7 @@ body{
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 300px;
+  width: 30vw;
   background-color: #BCD0E2;
   color: #fff;
   text-align: center;
@@ -123,26 +137,32 @@ body{
 	font-family: 'Hind', sans-serif;
 	text-align: left;
 	display:block;
-	font-size: 50px;
+	font-size: 8vw;
 	line-height: 60px;
-  margin-left: 30%;
-  margin-top: 30px;
+  margin-left: 3vw;
+  margin-top: 10vw;
+   z-index: 10;
+  color: #3498DA;
 }
 .p7{
 	font-family: 'Hind', sans-serif;
  text-align: left;
  display:block;
- font-size: 25px;
- line-height: 40px;
+ font-size: 4vw;
+ line-height: 6vw;
+  z-index: 10;
+  margin-left: 3vw;
+
 }
 .tooltip {
   position: relative;
   display: inline-block;
+    margin-top: 3vw;
+    margin-left: 28vw;
 }
-
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 300px;
+  width: 30vw;
   background-color: #BCD0E2;
   color: #fff;
   text-align: center;
@@ -151,9 +171,8 @@ body{
   opacity:40%;
   /* Position the tooltip */
   position: absolute;
-  z-index: 1;
+  z-index: 10;
 }
-
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
