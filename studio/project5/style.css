@@ -10,11 +10,14 @@ body{
 	text-align: left;
 	display:block;
 	font-size: 8vw;
+  color:#3498DA;
 	line-height: 6vw;
   margin-left: 3vw;
   margin-top: 10vw;
    z-index: 10;
-  color: #3498DA;
+}
+a{
+  color:#3498DA;
 }
 .p1{
 	font-family: 'Hind', sans-serif;
@@ -23,7 +26,8 @@ body{
  font-size: 4vw;
  line-height: 6vw;
   z-index: 10;
-   margin-left: 3vw;
+  margin-left: 3vw;
+  margin-top: -10vw;
 
 }
 .tooltip {
@@ -67,6 +71,8 @@ body{
  line-height: 6vw;
   z-index: 10;
    margin-left: 10vw;
+     margin-top: -12vw;
+
 }
 .tooltip {
   position: relative;
@@ -109,6 +115,7 @@ body{
  line-height: 6vw;
   z-index: 10;
    margin-left: 3vw;
+  margin-top: -10vw;
 
 }
 .tooltip {
@@ -152,6 +159,7 @@ body{
  line-height: 6vw;
   z-index: 10;
   margin-left: 3vw;
+  margin-top: -12vw;
 
 }
 .tooltip {
