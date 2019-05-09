@@ -1,7 +1,7 @@
 //New York
 $(function() {
 
-var url = 'http://api.openweathermap.org/data/2.5/weather?id=5128581&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e'
+var url = 'https://api.openweathermap.org/data/2.5/weather?id=5128581&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e'
 
   $.get(url, function(data) {
 
@@ -24,7 +24,7 @@ var windspeed = data.wind.speed;
 //Antananarivo
 $(function() {
 
-var url = 'http://api.openweathermap.org/data/2.5/weather?id=1070940&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e'
+var url = 'https://api.openweathermap.org/data/2.5/weather?id=1070940&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e'
 
   $.get(url, function(data) {
 
