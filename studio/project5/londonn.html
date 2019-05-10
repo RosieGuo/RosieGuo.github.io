@@ -74,29 +74,55 @@ var url = 'https://api.openweathermap.org/data/2.5/weather?id=2643743&units=metr
 var cloudiness = data.clouds.all;
     console.log(cloudiness);
         if (cloudiness <= 10){
-            $("img").css("border-color", "#A6CCE8");
+            $("img").css("border-color", "rgb(255, 255, 255)");
         } else if (cloudiness <= 20){
-            $("img").css("border-color", "#8ECCE8");
+            $("img").css("border-color", "rgb(240, 240, 240)");
         } else if (cloudiness <= 30){
-            $("img").css("border-color", "#64CCE8");
+            $("img").css("border-color", "rgb(230, 230, 230)");
       }else if (cloudiness <= 40){
-            $("img").css("border-color", "#46C4E8");
+            $("img").css("border-color", "rgb(200, 200, 200)");
       }else if (cloudiness <= 50){
-            $("img").css("border-color", "#46AEE8");
+            $("img").css("border-color", "rgb(180, 180, 180)");
       }else if (cloudiness <= 60){
-            $("img").css("border-color", "#46A2E8");
+            $("img").css("border-color", "rgb(160, 160, 160)");
       }else if (cloudiness <= 70){
-            $("img").css("border-color", "#9CD0E2");
+            $("img").css("border-color", "rgb(120, 120, 120)");
       }else if (cloudiness <= 80){
-            $("img").css("border-color", "#AAD0E2");
+            $("img").css("border-color", "rgb(100, 100, 100)");
       }else if (cloudiness <= 90){
-            $("img").css("border-color", "#B2D0E2");
+            $("img").css("border-color", "rgb(60, 60, 60)");
       }else if (cloudiness <= 100){
-            $("img").css("border-color", "#BCD0E2");
+            $("img").css("border-color", "rgb(0, 0, 0)");
       }
     });
 });
 
+//temp
+$(function() {
+
+var url = 'https://api.openweathermap.org/data/2.5/weather?id=2643743&units=metric&APPID=5b80cfe53a315fdfa9f5d600e141354e'
+
+  $.get(url, function(data) {
+
+var temp = data.main.temp;
+    console.log(temp);
+        if (temp <= 5){
+            $("body").css("background-color", "#40FF7F");
+        } else if (temp <= 10){
+            $("body").css("background-color", "#3A9A20");
+        } else if (temp <= 15){
+            $("body").css("background-color", "#FFFC86");
+      }else if (temp <= 20){
+            $("body").css("background-color", "#FCECA4");
+      }else if (temp <= 25){
+            $("body").css("background-color", "#FF9C15");
+      }else if (temp <= 30){
+            $("body").css("background-color", "#CE2115");
+      }else if (temp <= 35){
+            $("body").css("background-color", "#860100");
+      }
+    });
+});
 </script>
 
 </html>
